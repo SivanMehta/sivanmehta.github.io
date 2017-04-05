@@ -1,0 +1,10 @@
+.jumbotron
+{
+    margin-top: 15px;
+}
+
+img
+{
+    max-height: 100%;
+    /*width: auto;*/
+}
