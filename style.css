@@ -1,9 +1,9 @@
-.jumbotron
-{
-    margin-top: 15px;
+.bg-light {
+  margin-top: 15px;
+  border-radius: .3rem;
 }
 
-img
-{
-    max-width: 100%;
+img {
+  max-width: 100%;
+  border-radius: .3rem;
 }
