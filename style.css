@@ -15,13 +15,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-.breathe {
-  transform: scale(1, 1);
-  transition-duration: 1s;
-}
-
-.breathe:hover {
-  transition-duration: 1s;
-  transform: scale(1.01, 1.01);
-}
