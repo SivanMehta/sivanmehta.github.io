@@ -4,16 +4,19 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170143681-1"></script>
 		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+      const host = window.location.hostname;
+      if(host != "localhost") {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-		  gtag('config', 'UA-170143681-1');
+        gtag('config', 'UA-170143681-1');
+      }
     </script>
 
     <title>Sivan Mehta</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Siva Mehta">
+    <meta name="description" content="Sivan Mehta">
     <meta name="keywords" content="Sivan Mehta">
     <meta name="author" content="Sivan Mehta">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1" >
@@ -24,13 +27,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <div id="blob"></div>
+    <div id="blur"></div>
     <div class="container">
-      <div class="bg-light p-3">
-        <div class="row">
-          <div class = "col-sm-7 col-xs-12">
+      <div id="box">
+        <div id="content" class="row">
+          <div class="col-sm-7 col-xs-12">
             <h3 class="display-3">Hi, I'm Sivan!</h3>
-            <p>I'm a Software Engineer at <strong><a href = 'https://www.godaddy.com/'>GoDaddy</a></strong>,
-              where I started in 2017.
+            <p>I'm a currently Software Engineer at <strong>Microsoft</strong>, working on Microsoft Teams Calling.</p>
+
+            <p>I was previously at <strong>GoDaddy</strong> from 2017 - 2022, working on the the UX Platform and Rigor Platform.</p>
 
             <p>
                 I graduated from <strong>Carnegie Mellon University</strong> with a double major in
@@ -49,5 +55,6 @@
         </div>
       </div>
     </div>
+    <script src="blob.js"></script>
   </body>
 </html>
