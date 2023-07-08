@@ -20,7 +20,7 @@ a:hover {
   }
 
   50% {
-    scale: 1 1.5;
+    scale: 1 2;
   }
 
   to {
@@ -29,7 +29,6 @@ a:hover {
 }
 
 #blob {
-  background-color: red;
   height: 200px;
   aspect-ratio: 1 / 1;
   position: absolute;
@@ -54,7 +53,7 @@ a:hover {
   width: 100%;
   z-index: 2;
   position: absolute;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(50px);
 }
 
 .container {
@@ -65,8 +64,8 @@ a:hover {
 #box {
   background: linear-gradient(
     to right,
-    rgba(127, 255, 212, .2),
-    rgba(147, 112, 216, .2)
+    rgba(127, 255, 212, .1),
+    rgba(147, 112, 216, .1)
   );
 
   padding: 6px;

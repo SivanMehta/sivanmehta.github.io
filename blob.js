@@ -1,9 +1,6 @@
 // Following https://www.youtube.com/watch?v=kySGqoU7X-s for a blob blur effect
 
-
-if(window.innerWidth > 768) {
-  const blob = document.getElementById('blob');
-
+function followMouse() {
   document.body.onpointermove = function(event) {
     const { clientX, clientY } = event;
     blob.style.left = clientX + 'px';
@@ -15,8 +12,13 @@ if(window.innerWidth > 768) {
     }, {
       duration: 3000,
       fill: 'forwards',
-      easing: 'ease'})
+      easing: 'ease'
+    })
   }
-} else {
-  // randomize blob position on mobile
+}
+
+const blob = document.getElementById('blob');
+let momentum = [1, 1];
+if(window.innerWidth > 768) {
+  followMouse()
 }
